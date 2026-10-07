@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter and Dark Mode</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Notes Toolkit</h1>
+        <p>Write your note and keep track of your characters and words.</p>
+    </header>
+
+    <main>
+        <section class="note-card">
+            <label for="note-text">Write your note:</label>
+
+            <textarea
+                id="note-text"
+                rows="12"
+                maxlength="200"
+                placeholder="Start typing your note here..."
+            ></textarea>
+
+            <p id="char-count">0 / 200 characters</p>
+            <p id="word-count">0 words</p>
+
+            <div class="actions">
+                <button type="button" id="clear-btn">Clear</button>
+                <button type="button" id="theme-toggle">Dark mode</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Notes Toolkit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
